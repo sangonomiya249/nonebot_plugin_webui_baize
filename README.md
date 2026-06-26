@@ -1,6 +1,7 @@
 # nonebot_plugin_webui_baize
 
 NoneBot2 Web UI 管理面板插件，基于 FastAPI 提供 Web 管理界面。
+(注：本项目由ai编写，本人测试不能保证各种环境下的适配性)
 
 ## 📸 预览
 
