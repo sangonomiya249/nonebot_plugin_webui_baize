@@ -22,7 +22,7 @@ NoneBot2 Web UI 管理面板插件，基于 FastAPI 提供 Web 管理界面。
 ### 安装
 
 ```bash
-pip install nonebot-plugin-webui-baize
+pip install git+https://github.com/sangonomiya249/nonebot_plugin_webui_baize.git
 ```
 
 ### NoneBot 配置
