@@ -3,25 +3,6 @@
 NoneBot2 Web UI 管理面板插件，基于 FastAPI 提供 Web 管理界面。
 (注：本项目由ai编写，本人测试不能保证各种环境下的适配性)
 
-## 📸 预览
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/sangonomiya249/nonebot_plugin_webui_baize/main/screenshots/dashboard.png" width="400" alt="仪表盘">
-  <img src="https://raw.githubusercontent.com/sangonomiya249/nonebot_plugin_webui_baize/main/screenshots/plugins.png" width="400" alt="插件管理">
-</p>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/sangonomiya249/nonebot_plugin_webui_baize/main/screenshots/store.png" width="400" alt="插件商店">
-  <img src="https://raw.githubusercontent.com/sangonomiya249/nonebot_plugin_webui_baize/main/screenshots/github-plugins.png" width="400" alt="下载插件">
-</p>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/sangonomiya249/nonebot_plugin_webui_baize/main/screenshots/commands.png" width="400" alt="指令列表">
-  <img src="https://raw.githubusercontent.com/sangonomiya249/nonebot_plugin_webui_baize/main/screenshots/logs.png" width="400" alt="实时日志">
-</p>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/sangonomiya249/nonebot_plugin_webui_baize/main/screenshots/persona.png" width="400" alt="AI人设">
-  <img src="https://raw.githubusercontent.com/sangonomiya249/nonebot_plugin_webui_baize/main/screenshots/botinfo.png" width="400" alt="Bot信息">
-</p>
-
 ## 🚀 快速开始
 
 ### 安装
