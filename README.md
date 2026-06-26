@@ -68,7 +68,7 @@ plugins = ["nonebot_plugin_webui_baize"]
 
 修改后点击 💾 保存，自动备份原文件（`.bak`）。
 
-<img src="https://raw.githubusercontent.com/sangonomiya249/nonebot_plugin_webui_baize/main/screenshots/config-editor.png" width="600" alt="插件编辑器">
+<img src="https://raw.githubusercontent.com/sangonomiya249/nonebot_plugin_webui_baize/main/screenshots/config-editor.png" width="400" alt="插件编辑器">
 
 ---
 
