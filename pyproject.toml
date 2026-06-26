@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nonebot-plugin-webui-baize"
+version = "1.0.0"
+description = "NoneBot2 Web UI 管理面板，支持系统监控、插件管理、日志查看、Bot信息管理"
+license = { text = "MIT" }
+authors = [{ name = "Baize", email = "2491434931@qq.com" }]
+readme = "README.md"
+keywords = ["nonebot", "nonebot2", "webui", "dashboard", "management", "admin"]
+requires-python = ">=3.10"
+dependencies = [
+    "nonebot2>=2.2.0",
+    "fastapi>=0.100",
+    "uvicorn>=0.22",
+    "psutil>=5.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/sangonomiya249/nonebot_plugin_webui_baize"
+Repository = "https://github.com/sangonomiya249/nonebot_plugin_webui_baize"
+
+[project.entry-points."nonebot2.plugin"]
+nonebot_plugin_webui_baize = "nonebot_plugin_webui_baize:__plugin_meta__"
+
+[tool.setuptools.packages.find]
+include = ["nonebot_plugin_webui_baize*"]
+exclude = ["screenshots*", "examples*", "tests*", "docs*"]
