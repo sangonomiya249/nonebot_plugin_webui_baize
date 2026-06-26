@@ -649,18 +649,20 @@ def _parse_plugin_config_full(file_path: Path) -> dict:
     )
     _seen_json_files = set()  # 去重
 
-    # 收集所有要扫描的 .py 文件（主文件 + config.py + 同目录子模块）
+    # 收集要扫描的 .py 文件
+    # 单文件插件：只扫自身；目录插件：扫 __init__.py + config.py + 同目录子模块
     _files_to_scan = []
     if file_path.exists():
         _files_to_scan.append(file_path)
-        # config.py（aichat 的 JSON 引用都在这里）
-        _cp = plugin_dir / "config.py"
-        if _cp.is_file() and _cp != file_path:
-            _files_to_scan.append(_cp)
-        # 同目录下其他 .py 文件
-        for _sibling in sorted(plugin_dir.glob("*.py")):
-            if _sibling.name not in ("__init__.py",) and not _sibling.name.startswith("_") and _sibling not in _files_to_scan:
-                _files_to_scan.append(_sibling)
+        if file_path.name == "__init__.py":
+            # config.py（aichat 的 JSON 引用都在这里）
+            _cp = plugin_dir / "config.py"
+            if _cp.is_file() and _cp != file_path:
+                _files_to_scan.append(_cp)
+            # 同目录下其他 .py 文件
+            for _sibling in sorted(plugin_dir.glob("*.py")):
+                if _sibling.name != "__init__.py" and not _sibling.name.startswith("_") and _sibling not in _files_to_scan:
+                    _files_to_scan.append(_sibling)
 
     for _scan_file in _files_to_scan:
         try:
