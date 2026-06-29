@@ -27,4 +27,7 @@ nonebot_plugin_webui_baize = "nonebot_plugin_webui_baize:__plugin_meta__"
 
 [tool.setuptools.packages.find]
 include = ["nonebot_plugin_webui_baize*"]
-exclude = ["screenshots*", "examples*", "tests*", "docs*"]
+exclude = ["examples*", "tests*", "docs*"]
+
+[tool.setuptools.package-data]
+"nonebot_plugin_webui_baize" = ["screenshots/**/*"]
